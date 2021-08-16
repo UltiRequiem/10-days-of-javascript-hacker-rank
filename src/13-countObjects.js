@@ -1,11 +1,11 @@
 /* eslint-disable no-restricted-syntax */
 
 function getCount(objects) {
-  let count = 0;
+  let count = 0
   for (const index in objects) {
     if (objects[index].x === objects[index].y) {
-      count++;
+      count++
     }
   }
-  return count;
+  return count
 }

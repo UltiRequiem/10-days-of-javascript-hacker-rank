@@ -1,3 +1,3 @@
 function regexVar() {
-  return RegExp('\\d+', 'g');
+  return RegExp('\\d+', 'g')
 }

@@ -6,9 +6,9 @@ function getDayName(dateString) {
     'Wednesday',
     'Thursday',
     'Friday',
-    'Saturday'
-  ];
-  const date = new Date(dateString);
+    'Saturday',
+  ]
+  const date = new Date(dateString)
 
-  return dayNames[date.getDay()];
+  return dayNames[date.getDay()]
 }

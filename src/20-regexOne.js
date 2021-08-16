@@ -1,3 +1,3 @@
 function regexVar() {
-  return RegExp(/^([aeiou]).*\1$/);
+  return RegExp(/^([aeiou]).*\1$/)
 }

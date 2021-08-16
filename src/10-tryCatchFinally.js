@@ -1,8 +1,8 @@
 function reverseString(s) {
   try {
-    console.log(s.split('').reverse().join(''));
+    console.log(s.split('').reverse().join(''))
   } catch (error) {
-    console.log(error.message);
-    console.log(s);
+    console.log(error.message)
+    console.log(s)
   }
 }

@@ -1,18 +1,18 @@
 function getLetter(s) {
-  let letter;
+  let letter
 
   switch (s.charAt(0)) {
     case 'a' || 'e' || 'o' || 'i' || 'u':
-      letter = 'A';
-      break;
+      letter = 'A'
+      break
 
     case 'b' || 'c' || 'd' || 'f' || 'g':
-      letter = 'B';
-      break;
+      letter = 'B'
+      break
 
     case 'h' || 'j' || 'k' || 'l' || 'm':
-      letter = 'C';
-      break;
+      letter = 'C'
+      break
 
     case 'z' ||
       'n' ||
@@ -25,8 +25,8 @@ function getLetter(s) {
       'w' ||
       'x' ||
       'y':
-      letter = 'D';
+      letter = 'D'
   }
 
-  return letter;
+  return letter
 }
