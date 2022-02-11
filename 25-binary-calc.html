@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Binary Calculator</title>
+    <style>
+      body {
+        width: 33%;
+      }
+
+      #res {
+        background-color: lightgray;
+        border: solid;
+        height: 48px;
+        font-size: 20px;
+      }
+
+      #btn0,
+      #btn1 {
+        background-color: lightgreen;
+        color: brown;
+      }
+
+      #btnClr,
+      #btnEql {
+        background-color: darkgreen;
+        color: white;
+      }
+
+      #btnSum,
+      #btnSub,
+      #btnMul,
+      #btnDiv {
+        background-color: black;
+        color: red;
+      }
+
+      .buttonClass {
+        width: 25%;
+        height: 36px;
+        font-size: 18px;
+        margin: 0px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="res" class="resultClass"></div>
+    <div id="btns" class="buttonContainer">
+      <button id="btn0">0</button>
+      <button id="btn1">1</button>
+      <button id="btnClr">C</button>
+      <button id="btnEql">=</button>
+      <button id="btnSum">+</button>
+      <button id="btnSub">-</button>
+      <button id="btnMul">*</button>
+      <button id="btnDiv">/</button>
+    </div>
+    <script>
+      document.getElementById("btn0").addEventListener("click", () => {
+        document.getElementById("res").insertAdjacentHTML("beforeend", "0");
+      });
+
+      document.getElementById("btn1").addEventListener("click", () => {
+        document.getElementById("res").insertAdjacentHTML("beforeend", "1");
+      });
+
+      function operatorAction(eve) {
+        document
+          .getElementById("res")
+          .insertAdjacentHTML("beforeend", eve.target.innerHTML);
+      }
+
+      document.getElementById("btnSum").onclick = operatorAction;
+      document.getElementById("btnMul").onclick = operatorAction;
+      document.getElementById("btnDiv").onclick = operatorAction;
+      document.getElementById("btnSub").onclick = operatorAction;
+
+      document.getElementById("btnClr").onclick = () => {
+        document.getElementById("res").innerHTML = "";
+      };
+    </script>
+  </body>
+</html>
